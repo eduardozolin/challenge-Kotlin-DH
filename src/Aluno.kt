@@ -4,4 +4,8 @@ class Aluno(
     var codigoAluno: Int
 ) : Pessoa(nome, sobrenome) {
 
+    override fun equals(other: Any?): Boolean {
+        val aluno = other as? Aluno
+        return this.codigoAluno == aluno?.codigoAluno
+    }
 }

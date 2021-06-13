@@ -51,6 +51,18 @@ fun main() {
     var aluno1 = Aluno("Tony", "Stark", 5555)
     var aluno2 = Aluno("Steve", "Rodgers", 5444)
     var aluno3 = Aluno("Peter", "Parker", 5333)
-    var aluno4 = Aluno("Bruce", "Banner", 5222)
 
+
+    curso1.professorTitular = professorTitular1
+    curso1.professorAdjunto = professorAdjunto1
+
+    curso2.professorTitular = professorTitular2
+    curso2.professorAdjunto = professorAdjunto2
+
+    curso1.adicionarUmAluno(aluno1)
+    curso1.adicionarUmAluno(aluno2)
+
+    curso2.adicionarUmAluno(aluno1)
+    curso2.adicionarUmAluno(aluno2)
+    curso2.adicionarUmAluno(aluno3)
 }
