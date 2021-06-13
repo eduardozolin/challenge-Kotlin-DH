@@ -8,4 +8,8 @@ class Aluno(
         val aluno = other as? Aluno
         return this.codigoAluno == aluno?.codigoAluno
     }
+
+    override fun hashCode(): Int {
+        return codigoAluno
+    }
 }
