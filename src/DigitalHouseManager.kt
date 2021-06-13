@@ -107,12 +107,12 @@ class DigitalHouseManager(
         codigoCurso: Int
     ) {
         listaAlunos.forEach() {
-            if (it.equals(codigoAluno)) {
+            if (it.codigoAluno == codigoAluno) {
                 alunoExiste = it
             }
         }
         listaCurso.forEach() {
-            if (it.equals(codigoCurso)) {
+            if (it.codigoCurso == codigoCurso) {
                 cursoExiste = it
             }
         }
